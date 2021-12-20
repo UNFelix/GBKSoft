@@ -1,0 +1,195 @@
+.info {
+  margin: 15px;
+  width: 21%;
+  &__wrapper {
+    border: 1px solid #e6eaee;
+    box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.1);
+  }
+  &--top {
+    padding: 25px;
+  }
+  &__title {
+    font-size: 24px;
+    line-height: 32px;
+    font-weight: 700;
+    color: #272c30;
+  }
+  &__status {
+    display: flex;
+    align-items: center;
+    margin: 15px 10px;
+  }
+  &__details {
+    padding: 15px 25px;
+    border-top: 1px solid #e6eaee;
+    border-bottom: 1px solid #e6eaee;
+  }
+}
+.details {
+  &__block {
+    display: flex;
+    margin: 6px;
+  }
+  &__name {
+    width: 150px;
+    font-size: 14px;
+    font-weight: 700;
+    color: #272c30;
+  }
+  &__status {
+    width: 85px;
+  }
+}
+.back {
+  margin-bottom: 15px;
+  background-color: transparent;
+  font-size: 40px;
+  line-height: 32px;
+  font-weight: 900;
+  color: #7e9eb9;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+.confirmed,
+.ghost {
+  padding: 4px 10px;
+  font-size: 11px;
+  border-radius: 5px;
+  font-weight: 400;
+  letter-spacing: 0.1em;
+  color: #ffffff;
+}
+.confirmed {
+  background-color: #70c756;
+}
+.ghost {
+  margin: 0 10px;
+  opacity: 0.3;
+  background-color: #263649;
+}
+.published,
+.published__link {
+  font-size: 14px;
+  line-height: 32px;
+  font-weight: 400;
+  color: #91a5b8;
+}
+.published__link:hover {
+  color: #263649;
+}
+.price {
+  font-weight: 900;
+  color: #272c30;
+}
+.sale {
+  font-weight: 700;
+}
+.green {
+  color: #70c756;
+}
+.red {
+  color: #ed4e67;
+}
+.blue {
+  color: #6699ea;
+}
+.up,
+.down {
+  font-weight: 900;
+}
+.date {
+  padding: 0 5px;
+  background-color: #ed4e6759;
+  border-radius: 5px;
+}
+.inspection {
+  font-weight: 700;
+}
+
+.info--bottom {
+  margin: 15px 25px;
+}
+
+.input__block {
+  position: relative;
+}
+.aircraft {
+  &__notes {
+    font-size: 14px;
+    line-height: 28px;
+    font-weight: 700;
+    color: #272c30;
+  }
+  &__input {
+    margin-bottom: 10px;
+    padding: 10px 40px 10px 10px;
+    width: 100%;
+    min-height: 58px;
+    background-color: #ffffff;
+    border: 1px solid #eceff1;
+    vertical-align: middle;
+    outline: none;
+    -webkit-appearance: none;
+    &::placeholder {
+      padding: 10px;
+      font-size: 15px;
+      line-height: 21px;
+      font-weight: 400;
+      color: #90a4ae;
+    }
+  }
+  &__send {
+    position: absolute;
+    top: 50%;
+    right: 25px;
+    transform: translateY(-50%);
+    margin-left: -35px;
+    background: url("../img/send_msg.png");
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-size: contain;
+    border: none;
+    cursor: pointer;
+  }
+}
+
+.msg {
+  overflow-y: scroll;
+  height: 360px;
+  &::-webkit-scrollbar {
+    width: 0.5em;
+    cursor: pointer;
+  }
+  &::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  }
+  &::-webkit-scrollbar-thumb {
+    background-color: darkgrey;
+    outline: 1px solid slategrey;
+  }
+  &__block {
+    margin: 0 10px 5px 0;
+    padding: 5px 10px;
+    background-color: #f1f6ff;
+  }
+  &__info {
+    font-size: 12px;
+    font-weight: 700;
+    color: #90a4ae;
+  }
+  &__text {
+    font-size: 14px;
+    line-height: 28px;
+    font-weight: 700;
+    color: #272c30;
+  }
+}
+
+@media screen and (max-width: 1700px) {
+  .info {
+    width: 100%;
+    padding: 0 20px;
+    margin: 0 auto;
+  }
+}
